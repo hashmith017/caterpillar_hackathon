@@ -1,7 +1,6 @@
-
 # Caterpillar Smart Rental Tracking Dashboard
 
->A modern, full-featured React dashboard for tracking and analyzing heavy equipment rentals, designed for both equipment users and providers. Includes analytics, machine learning insights, interactive maps, and a built-in chatbot for user support.
+> A modern, full-featured React dashboard for tracking and analyzing heavy equipment rentals, designed for both equipment users and providers. Includes analytics, machine learning insights, interactive maps, and a built-in chatbot for user support.
 
 ---
 
@@ -12,7 +11,7 @@
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
 - [Data Model](#data-model)
-- [Architecture](#architecture)
+- [Architecture & Key Components](#architecture--key-components)
 - [Customization](#customization)
 - [FAQ](#faq)
 - [Contributing](#contributing)
@@ -20,31 +19,59 @@
 
 ---
 
-## Demo
+## 🚀 Demo
 
-> **Live demo:** _[Add your deployment link here if available]_  
-> ![Dashboard Screenshot](screenshot.png) <!-- Add a screenshot if you have one -->
+🔗 **Live Demo:** [https://hashmith017.github.io/caterpillar_hackathon](https://hashmith017.github.io/caterpillar_hackathon)  
+_(Deployed via GitHub Pages)_
+
+### 🔑 Demo Accounts
+
+- **User Login**  
+  - Username: `OP103`  
+  - Password: `op103`  
+  - Role: `User`
+
+- **Provider Login**  
+  - Username: `pro`  
+  - Password: `pass`  
+  - Role: `Provider`
 
 ---
 
 ## Features
 
-- **User & Provider Authentication**: Secure login and sign-up for both roles
-- **Role-based Dashboards**: Separate dashboards for users and providers
-- **Dark/Light Mode Toggle**: Switch themes instantly, persists across sessions
-- **Equipment Analytics**: View current rentals, history, overdue, and efficiency
-- **Interactive Charts**: Pie charts, bar charts, and more (powered by Chart.js)
-- **ML Insights**: Efficiency and operator scores, demand forecasting, anomaly detection
-- **Map Visualization**: See equipment distribution across sites (Mapbox/Leaflet)
-- **Chatbot**: Built-in help and FAQ for users
-- **Responsive UI**: Works on desktop and mobile
-- **Inline CSS**: Easy to customize styles
+- 🔐 **User & Provider Authentication** – Secure login and sign-up for both roles  
+- 📊 **Role-based Dashboards** – Separate dashboards for users and providers  
+- 🌗 **Dark/Light Mode Toggle** – Switch themes instantly, persists across sessions  
+- 📈 **Equipment Analytics** – View current rentals, history, overdue, and efficiency  
+- 📊 **Interactive Charts** – Pie charts, bar charts, and more (powered by Chart.js)  
+- 🤖 **ML Insights** – Efficiency and operator scores, demand forecasting, anomaly detection  
+- 🗺️ **Map Visualization** – See equipment distribution across sites (Mapbox/Leaflet)  
+- 💬 **Chatbot** – Built-in help and FAQ for users  
+- 📱 **Responsive UI** – Works on desktop and mobile  
+- 🎨 **Inline CSS** – Easy to customize styles  
 
 ---
 
 ## Screenshots
 
-> _Add screenshots of Login, User Dashboard, Provider Dashboard, and Chatbot here for best results._
+Login Page  
+<img width="1879" height="828" alt="login" src="https://github.com/user-attachments/assets/0c07a029-a9ca-4b44-a725-446cd1dfdc59" />
+
+User Dashboard  
+<img width="1918" height="947" alt="user dashboard" src="https://github.com/user-attachments/assets/244d04f1-edcd-4765-8d33-a7190d81ee2c" />  
+<img width="1917" height="873" alt="user dashboard 2" src="https://github.com/user-attachments/assets/7ae3bc7d-a394-4c0b-9e68-74fb6ac5b15c" />
+
+Provider Dashboard  
+<img width="1919" height="869" alt="provider dashboard" src="https://github.com/user-attachments/assets/9a09c7aa-238a-4916-8c15-e75fb08c5170" />  
+<img width="1203" height="868" alt="provider dashboard 2" src="https://github.com/user-attachments/assets/a58e3035-3ff0-4d1e-8cfb-bb5f8ae8bc8e" />  
+<img width="1185" height="862" alt="provider dashboard 3" src="https://github.com/user-attachments/assets/40ee6011-d42d-4e02-8612-d3b2c699334d" />  
+<img width="1161" height="784" alt="provider dashboard 4" src="https://github.com/user-attachments/assets/0b37d22b-b3b1-4914-8253-85c607c49306" />  
+<img width="1179" height="863" alt="provider dashboard 5" src="https://github.com/user-attachments/assets/64368197-c5ba-43c2-9ae0-a2eb22f3051a" />  
+<img width="1170" height="732" alt="provider dashboard 6" src="https://github.com/user-attachments/assets/11a42248-8375-41f8-a27a-d270c6d97165" />
+
+AI Chatbot  
+<img width="451" height="617" alt="chatbot" src="https://github.com/user-attachments/assets/2f7af883-eba3-4c9e-8846-b95b74eb69d1" />
 
 ---
 
@@ -58,7 +85,7 @@
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/avinashreddy1235/caterpillar.git
-   cd my-dashboard
+   cd caterpillar
    ```
 2. **Install dependencies:**
    ```bash
@@ -78,7 +105,7 @@
 ## Project Structure
 
 ```
-my-dashboard/
+caterpillar/
 ├── public/
 │   └── index.html
 ├── src/
@@ -97,7 +124,7 @@ my-dashboard/
 │   └── index.css
 ├── .gitignore
 ├── README.md
-└── ...
+└── package.json
 ```
 
 ---
@@ -116,24 +143,24 @@ Equipment data is stored in `src/data/equipment_data.csv` with columns:
 
 ## Architecture & Key Components
 
-- **App.jsx**: Main router and state manager
-- **Login.jsx / SignUp.jsx**: Auth pages for users/providers
-- **UserDashboard.jsx**: User analytics, current/history rentals, efficiency, overdue, charts
-- **ProviderDashboard.jsx**: Provider analytics, operator scores, demand forecasting, anomaly detection, map
-- **Chatbot.jsx**: FAQ and help system
-- **ThemeToggle.jsx**: Dark/light mode switch
-- **dataService.js**: Loads and parses CSV data
-- **mlService.js**: Machine learning logic for efficiency, operator scores, forecasting, anomaly detection
+- **App.jsx** – Main router and state manager  
+- **Login.jsx / SignUp.jsx** – Authentication pages  
+- **UserDashboard.jsx** – User analytics, current/history rentals, efficiency, overdue, charts  
+- **ProviderDashboard.jsx** – Provider analytics, operator scores, demand forecasting, anomaly detection, map  
+- **Chatbot.jsx** – FAQ and help system  
+- **ThemeToggle.jsx** – Dark/light mode switch  
+- **dataService.js** – Loads and parses CSV data  
+- **mlService.js** – Machine learning logic for efficiency, operator scores, forecasting, anomaly detection  
 
 ---
 
 ## Customization
 
-- **Styling**: All styles are inline in each component for easy editing
-- **Theme**: Edit `ThemeToggle.jsx` to change theme logic or add more themes
-- **Data**: Replace or expand `equipment_data.csv` for your own data
-- **Authentication**: For production, replace in-memory auth with a backend
-- **Map**: Add your Mapbox token in `ProviderDashboard.jsx` for full map features
+- 🎨 **Styling** – Inline styles in each component for easy editing  
+- 🌗 **Theme** – Edit `ThemeToggle.jsx` to change theme logic or add more themes  
+- 📊 **Data** – Replace or expand `equipment_data.csv` with your own data  
+- 🔐 **Authentication** – For production, replace in-memory auth with a backend  
+- 🗺️ **Map** – Add your Mapbox token in `ProviderDashboard.jsx` for full map features  
 
 ---
 
