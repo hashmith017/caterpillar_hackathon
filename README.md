@@ -84,7 +84,7 @@ AI Chatbot
 ### Installation
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/avinashreddy1235/caterpillar.git
+   git clone https://github.com/hashmith017/caterpillar_hackathon.git
    cd caterpillar
    ```
 2. **Install dependencies:**
