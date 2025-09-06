@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/caterpillar_hackathon/static/css/main.74817060.css",
+    "main.js": "/caterpillar_hackathon/static/js/main.005605cd.js",
+    "static/media/equipment_data.csv": "/caterpillar_hackathon/static/media/equipment_data.d23c725880dddb7dce62.csv",
+    "index.html": "/caterpillar_hackathon/index.html",
+    "main.74817060.css.map": "/caterpillar_hackathon/static/css/main.74817060.css.map",
+    "main.005605cd.js.map": "/caterpillar_hackathon/static/js/main.005605cd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74817060.css",
+    "static/js/main.005605cd.js"
+  ]
+}
