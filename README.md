@@ -5,7 +5,7 @@
 ---
 
 ## Table of Contents
-- [Demo](#demo)
+- [Demo](#Demo)
 - [Features](#features)
 - [Screenshots](#screenshots)
 - [Getting Started](#getting-started)
