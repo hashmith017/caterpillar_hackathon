@@ -19,7 +19,7 @@
 
 ---
 
-## 🚀 Demo
+## Demo
 
 🔗 **Live Demo:** [https://hashmith017.github.io/caterpillar_hackathon](https://hashmith017.github.io/caterpillar_hackathon)  
 _(Deployed via GitHub Pages)_
